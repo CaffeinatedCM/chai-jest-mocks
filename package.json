@@ -1,0 +1,23 @@
+{
+  "name": "chai-jest-mocks",
+  "version": "1.0.0",
+  "description": "Chai plugin to add assertions for jest mocks",
+  "main": "lib/index.js",
+  "repository": "git@github.com:CaffeinatedCM/chai-jest-mocks.git",
+  "author": "Joshua Letcher <caffeinatedcm@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "jest-matcher-utils": "^23.6.0"
+  },
+  "devDependencies": {
+    "chai-jest-diff": "^1.0.2",
+    "jest": "^23.6.0"
+  },
+  "peerDependencies": {
+    "chai": "^4.2.0"
+  }
+}
