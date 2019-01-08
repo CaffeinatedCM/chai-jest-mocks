@@ -1,4 +1,6 @@
 # chai-jest-mocks
+[![npm version](https://badge.fury.io/js/chai-jest-mocks.svg)](https://badge.fury.io/js/chai-jest-mocks)
+
 Chai plugin that adds assertions for jest mock functions
 
 ### __NOTE__ this is still very much a work in progress, more matchers and better documentation (and tests) are coming!
@@ -19,7 +21,7 @@ const chaiJestMock = require('chai-jest-mock');
 chai.use(chaiJestMock);
 ```
 
-Then you will have access to the new matchers:
+Then you will have access to the new assertions:
 
 ```
 // Expect a mock to be called
