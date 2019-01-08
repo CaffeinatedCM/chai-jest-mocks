@@ -8,15 +8,15 @@ Chai plugin that adds assertions for jest mock functions
 ## Installation
 On the command line:
 ```
-$ npm install --save-dev chai-jest-mock
+$ npm install --save-dev chai-jest-mocks
 ```
 
 ## Usage
 
-First, tell `chai` that you want to use `chai-jest-mock`
+First, tell `chai` that you want to use `chai-jest-mocks`
 ```
 const chai = require('chai');
-const chaiJestMock = require('chai-jest-mock');
+const chaiJestMock = require('chai-jest-mocks');
 
 chai.use(chaiJestMock);
 ```
@@ -32,4 +32,10 @@ expect(mockFn).to.have.beenCalledTimes(4);
 
 // Expect a mock to have been called with specific arguments
 expect(mockFn).to.have.beenCalledWith('hello', 'world');
+
+// Expect a mock to have been last called with specific arguments
+expect(mockFn).to.have.beenLastCalledWith('hello', 'world');
+
+// Expect a mock to have been nth (in this case, second) called with specific arguments
+expect(mockFn).to.have.beenNthCalledWith(2, 'hello', 'world');
 ```
