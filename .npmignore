@@ -1,2 +1,4 @@
 test/
 yarn.lock
+coverage/
+jest.config.js
