@@ -5,11 +5,12 @@
 version: 2
 jobs:
   build:
-    environment:
-      JEST_JUNIT_OUTPUT: "test-results/jest/results.xml"
+    
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
+        environment:
+            JEST_JUNIT_OUTPUT: "test-results/jest/results.xml"
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
