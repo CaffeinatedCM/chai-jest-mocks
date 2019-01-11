@@ -6,6 +6,11 @@
   "repository": "git@github.com:CaffeinatedCM/chai-jest-mocks.git",
   "author": "Joshua Letcher <caffeinatedcm@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/CaffeinatedCM/chai-jest-mocks",
+  "bugs": {
+    "url": "https://github.com/CaffeinatedCM/chai-jest-mocks/issues",
+    "email": "caffeinatedcm@gmail.com"
+  },
   "keywords": [
     "chai",
     "jest",
