@@ -9,8 +9,6 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:10.15
-        environment:
-            JEST_JUNIT_OUTPUT: "./test-results/jest/results.xml"
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -36,18 +34,12 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: mkdir test-results
-      - run: mkdir test-results/jest
-
-      - run: ls
-      - run: ls test-results/
-        
       # run tests!
       - run:
           name: Run tests for ci
           command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit
-
-      - run: ls test-results/jest
+          environment:
+            JEST_JUNIT_OUTPUT: "./test-results/jest/results.xml"
 
       - store_test_results:
           path: test-results
