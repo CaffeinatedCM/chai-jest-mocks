@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/chai-jest-mocks.svg)](https://badge.fury.io/js/chai-jest-mocks)
 [![CircleCI](https://circleci.com/gh/CaffeinatedCM/chai-jest-mocks/tree/master.svg?style=svg)](https://circleci.com/gh/CaffeinatedCM/chai-jest-mocks/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/CaffeinatedCM/chai-jest-mocks/badge.svg?branch=master)](https://coveralls.io/github/CaffeinatedCM/chai-jest-mocks?branch=master)
 
 Chai plugin that adds assertions for jest mock functions
 
