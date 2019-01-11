@@ -44,4 +44,8 @@ jobs:
       - store_test_results:
           path: test-results
 
+      - run:
+          name: Upload coverage to coveralls
+          command: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
 

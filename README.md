@@ -1,6 +1,7 @@
 # chai-jest-mocks
 
 [![npm version](https://badge.fury.io/js/chai-jest-mocks.svg)](https://badge.fury.io/js/chai-jest-mocks)
+[![CircleCI](https://circleci.com/gh/CaffeinatedCM/chai-jest-mocks/tree/master.svg?style=svg)](https://circleci.com/gh/CaffeinatedCM/chai-jest-mocks/tree/master)
 
 Chai plugin that adds assertions for jest mock functions
 
