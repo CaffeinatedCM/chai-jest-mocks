@@ -41,6 +41,6 @@ jobs:
             JEST_JUNIT_OUTPUT: "test-results/jest/results.xml"
 
       - store_test_results:
-        path: test-results
+          path: test-results
 
 
