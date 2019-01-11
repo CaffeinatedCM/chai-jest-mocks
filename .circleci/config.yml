@@ -42,7 +42,7 @@ jobs:
           command: yarn test --ci --reporters=default --reporters=jest-junit
           
 
-      - run: ls
+      - run: echo $JEST_JUNIT_OUTPUT
 
       - store_test_results:
           path: test-results
