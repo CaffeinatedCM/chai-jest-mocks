@@ -35,14 +35,19 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run: mkdir test-results
+      - run: mkdir test-results/jest
+
+      - run: ls
+      - run: ls test-results/
         
       # run tests!
       - run:
           name: Run tests for ci
           command: yarn test --ci --reporters=default --reporters=jest-junit
-          
 
-      - run: echo $JEST_JUNIT_OUTPUT
+      - run: ls test-results/jest
 
       - store_test_results:
           path: test-results
