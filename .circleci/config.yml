@@ -10,7 +10,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:7.10
         environment:
-            JEST_JUNIT_OUTPUT: "test-results/jest/results.xml"
+            JEST_JUNIT_OUTPUT: "./test-results/jest/results.xml"
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -45,7 +45,7 @@ jobs:
       # run tests!
       - run:
           name: Run tests for ci
-          command: yarn test --ci --reporters=default --reporters=jest-junit
+          command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit
 
       - run: ls test-results/jest
 
