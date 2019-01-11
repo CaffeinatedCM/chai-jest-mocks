@@ -35,10 +35,10 @@ jobs:
         
       # run tests!
       - run:
-        name: Run tests for ci
-        command: yarn test --ci --reporters=default --reporters=jest-junit
-        environment:
-          JEST_JUNIT_OUTPUT: "test-results/jest/results.xml"
+          name: Run tests for ci
+          command: yarn test --ci --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT: "test-results/jest/results.xml"
 
       - store_test_results:
         path: test-results
