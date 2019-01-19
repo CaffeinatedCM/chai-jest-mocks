@@ -1,4 +1,4 @@
-const expect = require('chai').expect;
+const { expect } = require('chai');
 
 const {
   matcherHint,
@@ -17,7 +17,7 @@ describe('ensureMock', () => {
   const cases = [['a regular function', () => true],['a number', 3], ['a string', 'hello world'], ['an object', { foo: 'bar'}]]
 
   it.each(cases)('throws when %s is passed in', (testCase, arg) => {
-    const expectedMessage = matcherHint(`[.not].to.have.testMatcher`, 'jest.fn()', '') +
+    const expectedMessage = matcherHint('[.not].to.have.testMatcher', 'jest.fn()', '') +
       '\n\n' +
       `${RECEIVED_COLOR('jest.fn()')} value must be a mock function or spy.\n` +
       `${printWithType('Received',arg, printReceived)}`;
