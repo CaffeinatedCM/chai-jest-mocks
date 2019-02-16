@@ -13,6 +13,7 @@
   },
   "keywords": [
     "chai",
+    "chai-plugin",
     "jest",
     "mocks"
   ],
