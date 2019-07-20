@@ -2,7 +2,7 @@ module.exports = {
   collectCoverage: true,
   coverageDirectory: 'coverage',
   collectCoverageFrom: [
-    'lib/**/*.{js}'
+    '<rootDir>/lib/**/*.js'
   ],
   watchPlugins: ['jest-runner-eslint/watch-fix'],
   projects: [
