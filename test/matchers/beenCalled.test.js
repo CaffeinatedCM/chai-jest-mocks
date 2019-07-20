@@ -40,7 +40,7 @@ describe('beenCalled assertion', () => {
     expect(() => {
       const mockFn = jest.fn();
       expect(mockFn).to.have.beenCalled();
-    }).to.throw('\n\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).to.have.beenCalled(\u001b[22m\u001b[2m)\u001b[22m\n\nExpected mock function to have been called, but it was not called.\n      ');
+    }).to.throw('\n\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).to.have.beenCalled()\u001b[22m\n\nExpected mock function to have been called, but it was not called.\n      ');
   });
 
   it('throws when the mock was called when expected not to be', () => {
@@ -48,6 +48,6 @@ describe('beenCalled assertion', () => {
       const mockFn = jest.fn();
       mockFn('test');
       expect(mockFn).not.to.have.beenCalled();
-    }).to.throw('\n\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).not.to.have.beenCalled(\u001b[22m\u001b[2m)\u001b[22m\n\nExpected mock function not to be called but it was called with:\n  \u001b[31m["test"]\u001b[39m\n      ');
+    }).to.throw('\n\u001b[2mexpect(\u001b[22m\u001b[31mjest.fn()\u001b[39m\u001b[2m).not.to.have.beenCalled()\u001b[22m\n\nExpected mock function not to be called but it was called with:\n  \u001b[31m["test"]\u001b[39m\n      ');
   });
 });
