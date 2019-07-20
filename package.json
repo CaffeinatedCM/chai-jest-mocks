@@ -21,16 +21,16 @@
     "test": "jest"
   },
   "dependencies": {
-    "jest-matcher-utils": "^23.6.0"
+    "jest-matcher-utils": "^24.8.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-jest-diff": "^1.0.2",
-    "coveralls": "^3.0.2",
-    "eslint": "^5.12.1",
-    "jest": "^23.6.0",
-    "jest-junit": "^6.0.0",
-    "jest-runner-eslint": "^0.7.1"
+    "coveralls": "^3.0.5",
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "jest-junit": "^6.4.0",
+    "jest-runner-eslint": "^0.7.4"
   },
   "peerDependencies": {
     "chai": "^4.2.0"
